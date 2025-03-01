@@ -99,12 +99,12 @@ class MatchUsers
     end
 end
 
-param_array = ARGV
-csv_file_name = param_array.pop
+# param_array = ARGV
+# csv_file_name = param_array.pop
 
-csv_file = csv_file_name
-match_types = param_array
-output_file = "matched_users_#{param_array.join('_')}.csv"
+# csv_file = csv_file_name
+# match_types = param_array
+# output_file = "matched_users_#{param_array.join('_')}.csv"
 
-grouper = MatchUsers.new(csv_file, match_types, output_file)
-grouper.group_and_write
+# grouper = MatchUsers.new(csv_file, match_types, output_file)
+# grouper.group_and_write
