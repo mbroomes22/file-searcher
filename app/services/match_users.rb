@@ -99,6 +99,8 @@ class MatchUsers
     end
 end
 
+# upload csv & params from command line:
+
 # param_array = ARGV
 # csv_file_name = param_array.pop
 
@@ -108,3 +110,14 @@ end
 
 # grouper = MatchUsers.new(csv_file, match_types, output_file)
 # grouper.group_and_write
+
+
+
+
+# attach processed csv to CsvUpload record
+# csv_upload.processed_file.attach(io: File.open(output_csv_path), filename: "processed_#{csv_upload.file.filename}")
+# File.delete(output_csv_path)
+# csv_upload.update()
+# rescue => e
+#     csv_upload.update(status: 'failed', error_message: e.message)
+# end
