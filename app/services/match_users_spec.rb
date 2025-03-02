@@ -1,6 +1,5 @@
 Rspec.describe MatchUsers do
   describe 'MatchUsers Class' do
-
     it 'generates a new csv file' do
     end
 
